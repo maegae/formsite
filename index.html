@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="myForm" name="myForm">
-        <input type="text" id="fullname">
-    </form>
+    <p>
+        enter in the task name
+    </p>
+    <div>
+        <input type="text" id="taskName">
+        <input type="button" value="Add Item" onclick="taskSubmit();" id="taskButton">
+        <ol id="taskList">
+            <li>
+                These are your tasks
+            </li>
+        </ol>
+    </div>
+        
+
 </body>
 </html>

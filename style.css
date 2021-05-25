@@ -1,0 +1,33 @@
+body {
+    background-color: indianred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    
+    position: relative;
+    left: 25%;
+    margin: 0;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    margin: 0;
+    width: 500px;
+    background-color: lightcoral;
+    align-items: center;
+}
+
+ol {
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 5px;
+}

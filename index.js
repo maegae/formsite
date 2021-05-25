@@ -1,22 +1,14 @@
-function validateForm() {
-    var fullName = document.forms["myForm"]["fullname"].value;
-    var price = document.forms["myForm"]["price"].value;
-    var description = document.forms["myForm"]["description"].value;
-    var date = document.forms["myForm"]["date"]
-    if (fullName == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-    if (price == "") {
-        alert("Price must be filled out");
-        return false;
-    }
-    if (description == "") {
-        alert("Description must be filled out");
-        return false;
-    }
-    if (date == "") {
-        alert("Date must be filled out");
-        return false;
-    }
+function taskSubmit() {
+    var taskName = document.getElementById("taskName").value;
+    var taskCheck = document.createElement("input");
+    var taskItem = document.createElement("li");
+    taskCheck.setAttribute("type", "checkbox");
+    taskCheck.setAttribute("onclick", "taskComplete();");
+    taskItem.appendChild(taskCheck);
+    taskItem.appendChild(document.createTextNode(taskName));
+    document.getElementById("taskList").appendChild(taskItem);
+}
+
+function taskComplete() {
+    alert("Task Complete!");
 }
